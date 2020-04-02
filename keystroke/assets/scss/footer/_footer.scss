@@ -1,0 +1,249 @@
+/*===========================
+    Start Footer Area 
+=============================*/
+
+.footer-default{
+    .footer-widget-item{
+        &.axil-border-right {
+            position: relative;
+            &::after {
+                position: absolute;
+                right: 7%;
+                content: "";
+                height: 100%;
+                width: 1px;
+                background: #C7C7D5;
+                top: 0;
+                @media #{$lg-layout} {
+                    display: none;
+                }
+                @media #{$md-layout} {
+                    display: none;
+                }
+                @media #{$sm-layout} {
+                    display: none;
+                }
+            }
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        p{
+            margin-bottom: 30px;
+            @media #{$sm-layout} {
+                margin-bottom: 10px;
+            }
+        }
+        ul{
+            &.ft-menu{
+                li {
+                    a{
+                        color: $body-color;
+                        line-height: 28px;
+                        padding: 0;
+                        @extend %fontWeight400;
+                        text-decoration: none;
+                        &:hover {
+                            color: $action-color;
+                        }
+                    }
+                    & + li{
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        &.widget-support{
+            position: relative;
+            margin-left: -37px;
+            @media #{$lg-layout} {
+                margin-left: 0;
+            }
+            @media #{$md-layout} {
+                margin-left: 0;
+            }
+            @media #{$sm-layout} {
+                margin-left: 0;
+            }
+        }
+    }
+
+    // Footer Style Three 
+    &.footer-style-3 {
+        .footer-widget-item {
+            .logo {
+                a {
+                    svg {
+                        @media #{$lg-layout} {
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+
+            h6{
+                &.title{
+                    color: #ffffff;
+                    font-size: 22px;
+                    line-height: 26px;
+                    font-weight: 700;
+                    margin-bottom: 40px;
+                    @media #{$md-layout} {
+                        margin-bottom: 20px;
+                    }
+                    @media #{$sm-layout} {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            h2 {
+                margin-bottom: 10px;
+            }
+            p {
+                margin-bottom: 30px;
+            }
+            ul {
+                &.ft-menu {
+                    li {
+                        a {
+                            color: #C7C7D6;
+                            padding: 0;
+                            text-decoration: none;
+                            font-size: 18px;
+                            @media #{$lg-layout} {
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                            @media #{$md-layout} {
+                                line-height: 20px;
+                            }
+                            &:hover {
+                                color: $action-color;
+                            }
+                        }
+                    }
+                }
+            }
+            .axil-ft-address {
+                margin-top: 35px;   
+                @media #{$md-layout} {
+                    margin-top: 16px;
+                }
+                @media #{$sm-layout} {
+                    margin-top: 16px;
+                }
+                .address {
+                    p {
+                        color: #C7C7D6;
+                        font-size: 18px;
+                        line-height: 28px;
+                        font-weight: 400;
+                        margin-bottom: 0;
+                        span {
+                            font-size: 16px;
+                            line-height: 22px;
+                            display: inline-block;
+                            font-weight: 700;
+                            padding-right: 12px;
+                        }
+                        a {
+                            color: #C7C7D6;
+                            text-decoration: none;
+                            font-weight: 400;
+                        }
+                        & + p {
+                            margin-top: 20px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .copyright-default {
+            .inner {
+                p {
+                    color: #F6F5FA;
+                }
+            }
+            .quick-contact {
+                ul {
+                    li {
+                        a {
+                            color: #F6F5FA;
+                            &:hover {
+                                color: $action-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*--------------------------
+    Newsletter Form  
+----------------------------*/
+.newsletter-form {
+    display: flex;
+    align-items: flex-end;
+    @media #{$md-layout} {
+        display: block;
+    }
+    @media #{$sm-layout} {
+        display: block;
+    }
+    input {
+        width: 330px;
+        padding-bottom: 8px;
+        @media #{$lg-layout} {
+            width: 250px;
+        }
+    }
+    .axil-button{
+        margin-left: 30px;
+        @media #{$large-mobile} {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+        @media #{$lg-layout} {
+            margin-left: 14px;
+        }
+        @media #{$md-layout} {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+        @media #{$sm-layout} {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+
+    }
+}
+
+
+/*======================
+    Copyright Area 
+========================*/
+
+
+.copyright-default {
+    .quick-contact {
+        ul {
+            margin: 0 -15px;
+            li {
+                margin: 0 15px;
+                a {
+                    color: $body-color;
+                    @extend %fontWeight400;
+                    text-decoration: none;
+                    &:hover {
+                        color: $action-color;
+                    }
+                }
+            }
+        }
+    }
+}
