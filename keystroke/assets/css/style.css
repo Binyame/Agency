@@ -11252,7 +11252,7 @@ Header Styles
   right: 0;
   width: auto;
   z-index: 9;
-  padding: 40px 0 0;
+  padding: 10px 0 0 10px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -21963,4 +21963,27 @@ Single Demo Area
 
 .copyright-default .quick-contact ul li a:hover {
   color: #702FFF;
+}
+
+
+
+/*==================
+Custom
+=================*/
+/*.title:after{
+  content: '';
+  width: 60px;
+  height: 2px;
+  background-color: #702FFF;
+  display: block;
+  margin-top: 12px;
+}*/
+.title-style:after{
+  content: '';
+  width: 80px;
+  height: 2px;
+  background-color: #000248;
+  display: block;
+  margin-top: 12px;
+  box-sizing: border-box;
 }
