@@ -1,4 +1,4 @@
 # Agency
 DCNine Web Solutions
 
-We disgn and develope website
+We design and develop website
